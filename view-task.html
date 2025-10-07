@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Tarea</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="task-view">
+        <h2>Proyecto de Matemáticas</h2>
+        <p><strong>Fecha de entrega:</strong> 10/09/2025</p>
+        <p><strong>Estado:</strong> Pendiente</p>
+        <p><strong>Descripción:</strong> Resolver los ejercicios de la página 45.</p>
+
+        <h3>Comentarios</h3>
+        <div class="comments">
+            <div class="comment">
+                <p><strong>Profesor:</strong> Recuerden entregar en PDF.</p>
+            </div>
+            <div class="comment">
+                <p><strong>Estudiante:</strong> ¿Puedo entregarlo en Word?</p>
+            </div>
+        </div>
+
+        <form action="php/add-comment.php" method="POST">
+            <textarea name="comment" placeholder="Añadir comentario..."></textarea>
+            <button type="submit">Comentar</button>
+        </form>
+
+        <a href="dashboard.html" class="btn-back">Volver</a>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>

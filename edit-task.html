@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Tarea</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Editar Tarea</h2>
+        <form id="editTaskForm">
+            <input type="hidden" name="task_id" value="1">
+
+            <label for="title">Título</label>
+            <input type="text" id="title" name="title" value="Proyecto de Matemáticas" required>
+
+            <label for="description">Descripción</label>
+            <textarea id="description" name="description">Resolver ejercicios página 45.</textarea>
+
+            <label for="due_date">Fecha de entrega</label>
+            <input type="date" id="due_date" name="due_date" value="2025-09-10" required>
+
+            <label for="status">Estado</label>
+            <select id="status" name="status">
+                <option value="Pendiente" selected>Pendiente</option>
+                <option value="En progreso">En progreso</option>
+                <option value="Completada">Completada</option>
+            </select>
+
+            <button type="submit" class="btn">Guardar cambios</button>
+        </form>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
